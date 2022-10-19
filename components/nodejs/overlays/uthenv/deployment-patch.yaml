@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs
+  namespace: utherp0
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:10497ecff47f0d4f9920c98c84b802269092ebfd93e59cbd9c6334d3c0ccf23a
+        name: container-image
+        resources: {}
+status: {}
